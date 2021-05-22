@@ -7,7 +7,7 @@ let jumping = 0;
 score.innerHTML = 0;
 let through = true;
 
-const alert = window.alert('Press any key/tab any where to jump');
+const welcome = window.alert('Flappy Bug\nPress any key/tab any where to jump');
 
 hole.addEventListener('animationiteration', function() {
   let random = -((Math.random() * 300) + 150);
