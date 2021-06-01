@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: "FlappyBirdy";
-  src: url("./font/FlappyBirdy2.ttf") format("truetype");
+  font-family: 'FlappyBirdy';
+  src: url('./font/FlappyBirdy2.ttf') format('truetype');
 }
 
 body {
@@ -17,14 +17,26 @@ body {
   background-size: cover;
 }
 
+.best {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'FlappyBirdy', Helvetica, sans-serif;
+  color: rgb(255, 84, 32);
+  z-index: 1;
+}
+
 #score {
   position: absolute;
   left: 0;
   right: 0;
-  top: 20px;
+  top: 35px;
   text-align: center;
   font-size: 30px;
-  font-family: "FlappyBirdy", Helvetica, sans-serif;
+  font-family: 'FlappyBirdy', Helvetica, sans-serif;
   color: rgb(255, 84, 32);
   z-index: 1;
 }
@@ -33,7 +45,7 @@ h1 {
   text-align: center;
   margin: 10px;
   font-size: 70px;
-  font-family: "FlappyBirdy", Helvetica, sans-serif;
+  font-family: 'FlappyBirdy', Helvetica, sans-serif;
   color: rgb(255, 84, 32);
 }
 
@@ -57,11 +69,11 @@ h1 {
 
 @keyframes block {
   0% {
-    left: 400px
+    left: 400px;
   }
 
   100% {
-    left: -50px
+    left: -50px;
   }
 }
 
@@ -83,7 +95,7 @@ h1 {
   top: 100px;
 }
 
-@media(max-width: 734px) {
+@media (max-width: 734px) {
   #game {
     width: 95%;
   }
